@@ -1,20 +1,21 @@
-var v1 = 'string';
-let v2 = 'string';
+const v1 = 'constante';
+console.log(v1);
 
-// var não respeita escopo
-if(true) {
-    var v = 'teste';
-}
-console.log(v);
+// não pode alterar o valor de tipos primitivos
+// v1 = 'alterar';
 
-// let existe apenas dentro do escopo
-if(true) {
-    let l = 'teste';
-}
-console.log(l);
+const obj = {
+    propriedade: 'valor'
+};
+console.log(obj);
+obj.propriedade = 'valor 2';
+console.log(obj);
 
-function soma(n1, n2) {
-    var total = n1+n2;
-}
-soma(1, 2);
-console.log(total);
+// Não pode ser initializado novamente
+// obj = {};
+// obj = 'string';
+
+delete obj.propriedade;
+console.log(obj);
+
+
