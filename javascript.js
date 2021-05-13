@@ -1,52 +1,30 @@
-var v1 = {};
+var v1 = [];
 console.log(v1, '-', typeof(v1));
 
-var v2 = new Object();
+var v2 = new Array();
 console.log(v2, '-', typeof(v2));
 
-v1.propriedade = 'valor';
-console.log(v1, '-', typeof(v1.propriedade));
+v1.push('string');
+v1.push(true);
+v1.push(2);
 
-v1.propriedade = 2;
-console.log(v1, '-', typeof(v1.propriedade));
+console.log(v1);
 
-v1.propriedade = true;
-console.log(v1, '-', typeof(v1.propriedade));
+const ultimo = v1.pop();
+console.log(ultimo);
+console.log(v1);
 
-v1.metodo = function() {
-    console.log('método 1');
-};
-v1.metodo();
+const primeiro = v1.shift();
+console.log(primeiro);
+console.log(v1);
 
-v1.metodo = function() {
-    console.log('método 2');
-};
-v1.metodo();
-v1.metodo = 'propriedade';
-console.log(v1.metodo);
-
-v1 = {};
-console.log(v1, '-', typeof(v1));
-
-// Formato literal
-v1 = {
-    propriedade: 'valor',
-    metodo: function() {
-        console.log('método');
-    }
-};
-v1.metodo();
-
-// Formato com new 
-v2 = new Object();
-v2.propriedade = 'valor';
-v2.metodo = function() {
-    console.log('método');
-};
-v2.metodo();
-
+v2.push(1, 2, 3, 4, 5);
 console.log(v2);
-delete v2.propriedade;
+
+v2.splice(0, 3);
 console.log(v2);
-delete v2.metodo;
+
+v2.splice(0, 1);
 console.log(v2);
+
+
