@@ -1,5 +1,30 @@
-const array = [1,2,3,4,5];
+const n1 = 10;
+const n2 = 20;
+let resultado;
 
-for(let indice in array) {
-    console.log(array[indice]);
-}
+resultado = n1 + n2;
+console.log(resultado);
+
+resultado = n1 - n2;
+console.log(resultado);
+
+resultado = n1 * n2;
+console.log(resultado);
+
+resultado = n2 / n1;
+console.log(resultado);
+
+resultado = n1 > n2;
+console.log(resultado);
+
+resultado = n1 >= n2;
+console.log(resultado);
+
+resultado = n1 < n2;
+console.log(resultado);
+
+resultado = n1 <= n2;
+console.log(resultado);
+
+console.log('10' == 10);
+console.log('10' === 10);
