@@ -1,32 +1,34 @@
-var funcao1 = function() {
-    console.log('funcao1');
-};
+if(true)
+    console.log('if');
 
-let funcao2 = function() {
-    console.log('funcao2');
-};
-
-const funcao3 = function() {
-    console.log('funcao3');
-};
-
-function funcao4() {
-    console.log('funcao4');
+if(true) {
+    console.log('if');
+    console.log('if');
 }
 
-// Arrow function
-const funcao5 = () => {
-    console.log('funcao5')
+if(false)
+    console.log('if');
+else 
+    console.log('else');
+
+if(false) {
+    console.log('if');
+    console.log('if');
+} else {
+    console.log('else');
+    console.log('else');
 }
 
-funcao1();
-funcao2();
-funcao3();
-funcao4();
-funcao5();
+if(false) 
+    console.log('if');
+else if(true) 
+    console.log('else if');
 
-console.log(typeof(funcao1));
-console.log(typeof(funcao2));
-console.log(typeof(funcao3));
-console.log(typeof(funcao4));
-console.log(typeof(funcao5));
+
+if(false) {
+    console.log('if');
+    console.log('if');
+} else if(true) {
+    console.log('else if');
+    console.log('else if');
+}
