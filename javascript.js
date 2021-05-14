@@ -1,21 +1,32 @@
-const v1 = 'constante';
-console.log(v1);
-
-// não pode alterar o valor de tipos primitivos
-// v1 = 'alterar';
-
-const obj = {
-    propriedade: 'valor'
+var funcao1 = function() {
+    console.log('funcao1');
 };
-console.log(obj);
-obj.propriedade = 'valor 2';
-console.log(obj);
 
-// Não pode ser initializado novamente
-// obj = {};
-// obj = 'string';
+let funcao2 = function() {
+    console.log('funcao2');
+};
 
-delete obj.propriedade;
-console.log(obj);
+const funcao3 = function() {
+    console.log('funcao3');
+};
 
+function funcao4() {
+    console.log('funcao4');
+}
 
+// Arrow function
+const funcao5 = () => {
+    console.log('funcao5')
+}
+
+funcao1();
+funcao2();
+funcao3();
+funcao4();
+funcao5();
+
+console.log(typeof(funcao1));
+console.log(typeof(funcao2));
+console.log(typeof(funcao3));
+console.log(typeof(funcao4));
+console.log(typeof(funcao5));
