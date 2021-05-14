@@ -1,34 +1,10 @@
-if(true)
-    console.log('if');
+const variavel = 'teste1';
 
-if(true) {
-    console.log('if');
-    console.log('if');
-}
-
-if(false)
-    console.log('if');
-else 
-    console.log('else');
-
-if(false) {
-    console.log('if');
-    console.log('if');
-} else {
-    console.log('else');
-    console.log('else');
-}
-
-if(false) 
-    console.log('if');
-else if(true) 
-    console.log('else if');
-
-
-if(false) {
-    console.log('if');
-    console.log('if');
-} else if(true) {
-    console.log('else if');
-    console.log('else if');
+switch(variavel) {
+    case 'teste1':
+        console.log('teste1');
+        break;
+    case 'teste2':
+        console.log('teste2');
+        break;
 }
